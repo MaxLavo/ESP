@@ -4,11 +4,12 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-
+import {Link} from 'react-router-dom'
 
 export default function AfficheListeAliMenthe() {
   return (
-    <Card sx={{ maxWidth: 345 }} onClick={()=> {window.location.href = 'jardinierProfil'}}>
+    <Card sx={{ maxWidth: 345 }}>
+        <Link to="/GestPlante"></Link>
       <CardActionArea>
         <CardMedia
           component="img"
@@ -25,6 +26,7 @@ export default function AfficheListeAliMenthe() {
           </Typography>
         </CardContent>
       </CardActionArea>
+        </Link>
     </Card>
   );
 }

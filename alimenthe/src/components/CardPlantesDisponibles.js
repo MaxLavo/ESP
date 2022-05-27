@@ -3,18 +3,18 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { CardActionArea } from '@mui/material';
-
+import { CardActionArea, Link } from '@mui/material';
 
 export default function AfficheCartePlantes() {
   return (
     <Card sx={{ maxWidth: 345, height:"75vh"}}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          image="https://panier-legumes.bio/wp-content/uploads/2017/04/paniers-legumes-bio-768x511.jpg"
-          alt="Liste Des Plantes "
+        <Link to="/GestPlante">
+        <CardActionArea sx={({height:"75vh"})}>
+          <CardMedia
+            component="img"
+            height="140"
+            image="https://panier-legumes.bio/wp-content/uploads/2017/04/paniers-legumes-bio-768x511.jpg"
+            alt="Liste Des Plantes "
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
@@ -25,6 +25,7 @@ export default function AfficheCartePlantes() {
           </Typography>
         </CardContent>
       </CardActionArea>
+      </Link>
     </Card>
   );
 }

@@ -10,6 +10,7 @@ import Typography from '@mui/material/Typography';
 import Icon from "@mui/material/Icon";
 import AddIcon from "@mui/icons-material/Add";
 import DeleteIcon from "@mui/icons-material/Delete"
+import ModifyIcon from "@mui/icons-material/Build"
 import { CardActionArea, IconButton, Paper } from '@mui/material';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
@@ -61,6 +62,10 @@ import Delete from '@mui/icons-material/Delete';
               <IconButton>
                 <DeleteIcon/>
               </IconButton>
+              <IconButton>
+                <ModifyIcon/>
+              </IconButton>
+              
             </React.Fragment>
           }
         />
@@ -81,6 +86,9 @@ import Delete from '@mui/icons-material/Delete';
               </Typography>
               <IconButton>
                   <DeleteIcon/>
+              </IconButton>
+              <IconButton>
+                <ModifyIcon/>
               </IconButton>
             </React.Fragment>
           }
@@ -103,17 +111,14 @@ import Delete from '@mui/icons-material/Delete';
               <IconButton>
                 <DeleteIcon/>
               </IconButton>
+              <IconButton>
+                <ModifyIcon/>
+              </IconButton>
             </React.Fragment>
           }
         />
         </ListItem>
         </List>
-        <Button>
-          ok
-        </Button>
-        <Button>
-          non
-        </Button>
     </Box>)
 }
 // NE PAS OUBLIER FAIRE LE <WeatherBoards/> 
