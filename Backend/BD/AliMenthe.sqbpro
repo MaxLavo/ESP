@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><sqlb_project><db path="/home/alimenthe/Desktop/ESP/BD/AliMenthe" foreign_keys="1" case_sensitive_like="0" temp_store="0" wal_autocheckpoint="1000" synchronous="2"/><attached/><window><current_tab id="0"/></window><tab_structure><column_width id="0" width="300"/><column_width id="1" width="0"/><column_width id="2" width="100"/><column_width id="3" width="1604"/><column_width id="4" width="0"/><expanded_item id="0" parent="1"/><expanded_item id="1" parent="1"/><expanded_item id="2" parent="1"/><expanded_item id="3" parent="1"/></tab_structure><tab_browse><current_table name="Jardins"/><default_encoding codec=""/><browse_table_settings/></tab_browse><tab_sql><sql name="SQL 1">CREATE TABLE Jardins (idJardin INTEGER, nom VARCHAR(35), adresse VARCHAR(50), admins INTEGER)
+
+CREATE TABLE Lots (idLot INTEGER, nom VARCHAR(35), capacite INTEGER, membresEnAttente INTEGER,
+				   membres INTEGER, idJardin INTEGER,
+				   FOREIGN KEY (idJardin) REFERENCES Jardins(idJardin))
+
+CREATE TABLE Plantes (idPlante INTEGER, nom VARCHAR(35), joursDeCulture INTEGER)
+
+CREATE TABLE Plantations (idLot INTEGER, idPlanteur INTEGER, idPlante INTEGER, datePlantation DATETIME,
+						  exemplaires INTEGER,
+						  FOREIGN KEY (idLot) REFERENCES Lots(idLot),
+						  FOREIGN KEY (idPlante) REFERENCES Plantes(idPlante))
+
+CREATE TABLE Membres (idMembre INTEGER, prenom VARCHAR(35), nom VARCHAR(30), motDePasse VARCHAR(115), adresse VARCHAR(50))
+
+</sql><current_tab id="0"/></tab_sql></sqlb_project>

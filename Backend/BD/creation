@@ -1,0 +1,34 @@
+IF NOT EXISTS 
+CREATE DATABASE AliMentheDB
+CREATE TABLE Membres ( idMembres int NOT NULL,
+	Prenom VARCHAR(50) NOT NULL, Nom VARCHAR(50) NOT NULL,
+	motDePasse VARCHAR(30) NOT NULL, adresse VARCHAR(125) NOT NULL)
+INSERT INTO Membres (idMembres, Prenom, Nom, motDePasse, adresse)
+VALUES('1', 'Jean', 'Papineau', 'MusicienPedagogue123', '305 rue de la page')
+INSERT INTO Membres (idMembres, Prenom, Nom, motDePasse, adresse)
+VALUES('2', 'Marie', 'Incarnation', '#IllumineeDelaVie', '13 rue des escaliers divins')
+INSERT INTO Membres (idMembres, Prenom, Nom, motDePasse, adresse)
+VALUES('3', 'Nostradamus', 'Prophet', 'JeVoisDansLeFuturEtPasToi', '42 rue de la tour')
+INSERT INTO Membres (idMembres, Prenom, Nom, motDePasse, adresse)
+VALUES('4', 'Bob', 'Bissonnette', 'ySontTouteFolle000', '31 rue de l'hélicoptere')
+INSERT INTO Membres (idMembres, Prenom, Nom, motDePasse, adresse)
+VALUES('5', 'Jeanne', 'Arc', 'ExperienceReussiePT#!', '6 rue de la radiation')
+INSERT INTO Membres (idMembres, Prenom, Nom, motDePasse, adresse)
+VALUES('6', 'Brutus', 'Nazareth', 'FrereEloigneDuDivin', '31 rue du mensonge ')
+
+CREATE TABLE Plantes (idPlantes INT NOT NULL,
+	Nom VARCHAR(40) NOT NULL,
+	JoursDeCulture int NOT NULL)
+INSERT INTO Plantes (idPlantes, Nom, JoursDeCulture)
+VALUES (1,'Pomme', 74)
+INSERT INTO Plantes (idPlantes, Nom, JoursDeCulture)
+VALUES (2,'Muguet', 5)
+INSERT INTO Plantes (idPlantes, Nom, JoursDeCulture)
+VALUES (3,'Fruits de la passion', 67)
+INSERT INTO Plantes (idPlantes, Nom, JoursDeCulture)
+VALUES (4,'Navet', 389
+
+
+CREATE TABLE Jardins ( INT, STRING, STRING, ARRAY, ARRAY)
+
+
