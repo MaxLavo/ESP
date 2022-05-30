@@ -5,7 +5,10 @@ import BackendAlimenthe from "./AlimentheBackend.js";
 const app = express();
 app.use(bodyParser.json());
 app.use(cors());
-
+this.app.use(express.static(path.join(__dirname, "../alimenthe/build")));
+this.app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../alimenthe/build/index.html"));
+});
 app.get("/", async (req, res) => {
   try {
     BackendAlimenthe.ok();
