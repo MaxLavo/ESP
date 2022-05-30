@@ -6,10 +6,10 @@ import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import { Link } from "react-router-dom";
 
-export default function ActionAreaCard() {
+export default function AfficherListPlante() {
   return (
     <Card sx={{ maxWidth: 345, height: "80vh" }}>
-      <Link to="/PagePlante">
+      <Link to="/PageListPlante">
         <CardActionArea sx={{ height: "80vh" }}>
           <CardMedia
             component="img"
@@ -19,10 +19,10 @@ export default function ActionAreaCard() {
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
-              Ajout des plantes
+              Liste des plantes
             </Typography>
             <Typography variant="body2" color="text.secondary">
-              Ajout des plantes / Add plant
+              Liste des plantes / Plant list
             </Typography>
           </CardContent>
         </CardActionArea>
